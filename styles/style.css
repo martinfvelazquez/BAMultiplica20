@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dosis&display=swap');
+
+html{
+    box-sizing: border-box;
+    height: 100%;
+}
+
+*, *::before, *::after{
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    align-items: center;
+    display:flex;
+    background: linear-gradient(90deg, rgb(128, 201, 250), rgb(255, 255, 255), rgb(128, 201, 250));
+    font-family: 'Dosis', sans-serif;
+    font-display: swap;
+    height: 90%;
+    justify-content: center;
+}
+
+.wrapper{
+    backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+    background: rgba(255, 255, 255, 0.75);
+    border: 1px solid rgba(255, 255, 255, 0.01);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1);
+    color: #232323;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    background: rgba(0, 0, 0, 0.15);
+    border: 1px solid rgba(255,255,255,0.34);
+    flex-basis: 400px;
+    height: 540px;
+    padding: 20px 35px;
+}
+
+.calc-screen{
+    backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+    background: rgba(255, 255, 255, 0.75);
+    border: 1px solid rgba(255, 255, 255, 0.01);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1);
+    color: #232323;
+    font-size: 35px;
+    overflow: auto;
+    padding: 20px;
+    text-align: right;
+    width: 326px;
+}
+
+.calc-button-row{
+    display: flex;
+    justify-content: space-between;
+    margin: 5% 0;
+}
+
+.calc-button{
+    backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+    background: rgba(255, 255, 255, 0.75);
+    border: 1px solid rgba(255, 255, 255, 0.01);
+    border-radius: 100px;
+    box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1);
+    color: #232323;
+    flex-basis: 20%;
+    font-family: inherit;
+    font-size: 24px;
+    height: 65px;
+}
+
+.calc-button:last-child{
+    backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+    border: 1px solid rgba(255, 255, 255, 0.01);
+    border-radius: 100px;
+    box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1);
+    color:#232323;
+    background-color: rgba(235, 129, 0, 0.8);
+}
+
+.calc-button:last-child:hover{
+    background-color: rgba(235, 129, 0, 0.6);
+    color: inherit;
+}
+
+.calc-button:hover{
+    background-color: inherit;
+}
+
+.calc-button:active{
+    background-color: #ddd;
+}
+
+.calc-button:last-child:active{
+    background-color: rgba(245, 149, 10, 0.6);
+    color: inherit;
+}
+
+.double{
+    flex-basis: 47%;
+}
+
